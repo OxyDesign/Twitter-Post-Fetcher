@@ -55,7 +55,8 @@
       html += '</ul>';
       element.innerHTML = html;
     } else {
-      customCallbackFunction(tweets);
+      var html = customCallbackFunction(tweets);
+      if (html) document.getElementById(domNode).innerHTML = html;
     }
   }
 

@@ -241,13 +241,13 @@ require(['twitter-fetcher'], function (fetcher) {
 var config8 = {
   "id": '502160051226681344',
   "dataOnly": true,
+  "domId": 'example8',
   "customCallback": populateTpl
 };
 
 twitterFetcher.fetch(config8);
 
 function populateTpl(tweets){
-  var element = document.getElementById('example8');
   var html = '<ul>';
   for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
     var tweetObject = tweets[i];
@@ -259,5 +259,5 @@ function populateTpl(tweets){
     + '</li>';
   }
   html += '</ul>';
-  element.innerHTML = html;
+  return html;
 }
