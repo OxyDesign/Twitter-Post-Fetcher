@@ -91,6 +91,84 @@ ul li:hover {
   max-height:250px;
 }
 
+.tweet-img{
+  float:left;
+  border:1px solid #dedede;
+  background:#f0f3fb;
+  margin:5px;
+  padding:10px;
+}
+
+.tweet-img img{
+  max-width:200px;
+  max-height:150px;
+  display:block;
+}
+
+.tweet-infos{
+  float:right;
+  width:20%;
+  text-align:center;
+  border:;
+  border:1px solid #dedede;
+  background:#f0f3fb;
+  margin:5px;
+  padding:20px 5px;
+}
+
+.tweet-infos > *{
+  display:block;
+  text-align:center;
+}
+
+.tweet-infos img{
+  display:block;
+  margin:0 auto 10px;
+}
+
+.tweet-infos a{
+  color:#222;
+}
+
+.tweet-content{
+  overflow:hidden;
+  padding:0 50px;
+  font-size:12pt;
+}
+
+.tweet-content a{
+  display:inline-block;
+  font-size:12pt;
+  color:#222;
+  padding:3px 8px;
+  background:#ccc;
+  border:1px solid #dedede;
+  text-decoration:none;
+}
+
+.tweet-content a:hover{
+  background:#fff;
+}
+
+.tweet-link{
+  clear:both;
+  text-align:center;
+}
+
+.tweet-link a{
+  display:inline-block;
+  padding:10px 50px;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+li:hover .tweet-img,
+li:hover .tweet-infos{
+  background:#fff;
+}
+
 #linkage {
   position:fixed;
   top:0px;

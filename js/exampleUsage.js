@@ -240,6 +240,7 @@ require(['twitter-fetcher'], function (fetcher) {
 
 var config8 = {
   "id": '502160051226681344',
+  "maxTweets": 3,
   "dataOnly": true,
   "customCallback": populateTpl
 };
@@ -253,8 +254,8 @@ function populateTpl(tweets){
     var tweetObject = tweets[i];
     html += '<li>'
       + (tweetObject.image ? '<div class="tweet-img"><img src="'+tweetObject.image+'" /></div>' : '')
-      + '<p class="tweet-content">' + tweetObject.tweet + '</p>'
       + '<p class="tweet-infos">Posted on the ' + tweetObject.time + ', by ' + tweetObject.author + '</p>'
+      + '<p class="tweet-content">' + tweetObject.tweet + '</p>'
       + '<p class="tweet-link"><a href="' + tweetObject.permalinkURL + '">Link</a></p>'
     + '</li>';
   }
